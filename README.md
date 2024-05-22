@@ -30,3 +30,13 @@ Once you have configured the `.env` file, you can start all the services with th
 
 ```bash
 docker-compose up -d
+```
+## 🌐 Exposed Services
+
+This project exposes the following services:
+
+- **Plex**: Runs on `localhost:32400`
+- **Transmission**: Runs on `localhost:9091`
+- **Sonarr**: Runs on `localhost:8989`
+- **Radarr**: Runs on `localhost:7878`
+- **Jackett**: Runs on `localhost:9117`
