@@ -31,8 +31,9 @@ services:
       - PUID=1000  # Ajusta esto a tu usuario
       - PGID=1000  # Ajusta esto a tu grupo
       - TZ=America/Mexico_City
+      - PLEX_CLAIM=${PLEX_CLAIM}
     volumes:
-      - ${STORAGE}/Plex Media Server:/root/Library/Application Support/Plex Media Server
+      - ${PLEX_CONFIG}:/config
       - ${TV_PATH}:/tv
       - ${MOVIES_PATH}:/movies
     restart: unless-stopped
